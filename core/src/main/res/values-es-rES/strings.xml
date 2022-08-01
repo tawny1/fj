@@ -1,0 +1,80 @@
+<resources>
+    <string name="excavator_rtk_net">RTK de Red</string>
+    <string name="excavator_rtk_ntrip">RTK de Red Ntrip</string>
+    <string name="excavator_rtk_bs">RTK de estación base</string>
+
+    <string name="excavator_bs_pairing_external">Emparejamiento de radio externa</string>
+    <string name="excavator_bs_pairing_internal">Emparejamiento de radio interna</string>
+    <string name="excavator_ntrip_login">Iniciar sesión</string>
+    <string name="excavator_pairing_btn">Emparejamiento</string>
+    <string name="toast_pair_suc">Se ha emparejamiento</string>
+    <string name="toast_pair_failed">La emparejamiento falló</string>
+    <string name="waiting">Espere……</string>
+    <string name="excavator_base_code">Código de apareamiento de la estación base</string>
+    <string name="network_disconnect">Conéctese a red</string>
+
+    <!--Ntrip-->
+    <string name="ntrip_connect">Conectar</string>
+    <string name="ntrip_disconnect">Desconectar</string>
+    <string name="ntrip_host_port_empty">¡La dirección o el puerto están vacíos!</string>
+    <string name="error_source_node_is_empty">¡El nodo de fuente está vacío!</string>
+    <string name="error_account_or_password_is_empty">¡La cuenta o contraseña está vacía!</string>
+    <string name="ntrip_get_source">Obteniendo la fuente…</string>
+    <string name="ntrip_get_source_success">¡Se ha obtenido la fuente!</string>
+    <string name="ntrip_get_source_failed">La obtenido la fuente falló</string>
+    <string name="ntrip_link_to_node">Conectando……</string>
+    <string name="ntrip_link_to_node_success">¡Se ha conectado!</string>
+    <string name="ntrip_link_to_node_disconnected">¡La conexión actual está desconectada!</string>
+    <string name="ntrip_layout_host">Dirección:</string>
+    <string name="ntrip_layout_port">Puerto:</string>
+    <string name="ntrip_layout_source_node">Nodo de fuente:</string>
+    <string name="ntrip_layout_get_source">Lista de fuentes</string>
+    <string name="ntrip_layout_account">Cuenta:</string>
+    <string name="ntrip_layout_password">Contraseña:</string>
+
+    <string name="cancel">Cancelar</string>
+
+    <string name="operation_success">Operación exitosa</string>
+    <string name="operation_failed">operación fallida</string>
+
+    <string name="error_not_support_network_rtk">¡El área actual no es compatible con el modo de RTK de Red !</string>
+    <string name="toast_pairing_success_wait_location">Emparejamiento completo, obteniendo posicionamiento…</string>
+<!--    <string name="buy_more_time">延长有效期</string>-->
+<!--    <string name="cnn_apply">连接使用</string>-->
+<!--    <string name="text_ntrip">Ntrip 网络</string>-->
+<!--    <string name="tv_rtk">基站 RTK</string>-->
+<!--    <string name="text_change_account">切换账户</string>-->
+<!--    <string name="text_input_frequency_code">请输入对频码</string>-->
+<!--    <string name="text_ntrip_detail">Ntrip 网络账户详情</string>-->
+<!--    <string name="text_input_company_name">请输入公司名称</string>-->
+<!--    <string name="text_input_ntrip_name">请输入账户名称</string>-->
+<!--    <string name="text_input_ntrip_pwd">请输入密码</string>-->
+<!--    <string name="text_add_ntrip_account">新增账户</string>-->
+<!--    <string name="text_ntrip_save">保存</string>-->
+<!--    <string name="text_ntrip_list_choice_title">选择账户</string>-->
+<!--    <string name="text_ntrip_name_tip">账户名称</string>-->
+<!--    <string name="text_ntrip_company_name_tip">公司名称</string>-->
+<!--    <string name="text_input">请输入</string>-->
+<!--    <string name="network_exception">网络异常</string>-->
+<!--    <string name="tetx_rtk_expire_date_over">已过期，网络无法使用</string>-->
+<!--    <string name="tetx_rtk_expire_date">有限期截止：%s</string>-->
+<!--    <string name="msg_sn_not_bind_rtk">当前SN号未开通，请联系当地经销商或拨打客服热线。</string>-->
+    <string name="text_ntrip_company_name_tip">Nombre de la empresa</string>
+    <string name="text_input_ntrip_name">Introduzca el nombre de la cuenta</string>
+    <string name="msg_sn_not_bind_rtk">SN no está disponible actualmente, por favor póngase en contacto con el distribuidor local o llame a la línea de atención al cliente.</string>
+    <string name="tetx_rtk_expire_date_over">Caducado, la red no está disponible</string>
+    <string name="tetx_rtk_expire_date">Plazo limitado:% s</string>
+    <string name="text_input">Por favor, introduzca</string>
+    <string name="text_add_ntrip_account">Añadir cuenta</string>
+    <string name="text_ntrip_save">Guardar</string>
+    <string name="text_ntrip_list_choice_title">Seleccionar cuenta</string>
+    <string name="buy_more_time">Prórroga de la validez</string>
+    <string name="text_input_company_name">Introduzca el nombre de la empresa</string>
+    <string name="text_ntrip_detail">Detalles de la cuenta de red ntrip</string>
+    <string name="text_ntrip_name_tip">Nombre de la cuenta</string>
+    <string name="text_change_account">Cambiar cuenta</string>
+    <string name="text_input_frequency_code">Por favor, introduzca el Código de contraparte</string>
+    <string name="text_input_ntrip_pwd">Introduzca la contraseña</string>
+    <string name="cnn_apply">Uso de la conexión</string>
+    <string name="network_exception">Excepción de red</string>
+</resources>

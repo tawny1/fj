@@ -1,0 +1,58 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="commom_background">#f3f3f3</color>
+    <color name="text_color">#2f2f2f</color>
+    <color name="green">#50D50D</color>
+    <color name="sure_color">#02BB00</color>
+    <color name="color_5aec10">#5aec10</color>
+    <color name="color_b3ffffff">#B3FFFFFF</color>
+    <color name="color_dialog_divider_line">#F4F4F4</color>
+    <!-- for ota begin -->
+    <!-- for ota end -->
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGray">#818181</color>
+    <color name="color_D0021B">#D0021B</color>
+    <color name="color_ddd">#ddd</color>
+    <color name="color_DDDDDD">#DDDDDD</color>
+    <color name="color_EBEBEB">#EBEBEB</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_02BB00">#02BB00</color>
+    <color name="color_070707">#070707</color>
+    <color name="color_9B9B9B">#9B9B9B</color>
+    <color name="color_FF666666">#ff666666</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_FA5051">#FA5051</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+
+    <color name="color_FFC500">#FFC500</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_FAFAFA">#FAFAFA</color>
+    <color name="color_FBFBFB">#FBFBFB</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_FF6044">#FF6044</color>
+    <color name="color_26FFC500">#26FFC500</color>
+    <color name="color_636262">#636262</color>
+    <color name="color_FBE77A">#FBE77A</color>
+
+    <color name="progress_shadow_bg">#d4d2d2</color>
+    <color name="excavator_progress_start">#1A53D011</color>
+    <color name="excavator_progress_end">#53D011</color>
+    <color name="excavator_progress_bg">#f5f5f5</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_E12828">#E12828</color>
+    <color name="color_53D011">#53D011</color>
+    <color name="color_ED0101">#ED0101</color>
+    <color name="color_33D001">#33D001</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/rl_layout"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="0dp"
+    android:paddingVertical="15dp">
+
+    <TextView
+        android:id="@+id/tv_check_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="铲刀传感器异常"
+        android:textColor="@color/check_normal"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_check_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_check_name"
+        android:layout_marginTop="6dp"
+        android:text="连接异常"
+        android:textColor="@color/color_999"
+        android:textSize="18sp" />
+
+</RelativeLayout>

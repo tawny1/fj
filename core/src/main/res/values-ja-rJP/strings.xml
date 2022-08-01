@@ -1,0 +1,79 @@
+<resources>
+    <string name="excavator_rtk_net">ネットワークRTK</string>
+    <string name="excavator_rtk_ntrip">NtripネットワークRTK</string>
+    <string name="excavator_rtk_bs">基地局RTK</string>
+
+    <string name="excavator_bs_pairing_external">外付けラジオ局のマッチング</string>
+    <string name="excavator_bs_pairing_internal">内蔵ラジオ局のマッチング</string>
+    <string name="excavator_ntrip_login">ログイン</string>
+    <string name="excavator_pairing_btn">マッチング</string>
+    <string name="toast_pair_suc">マッチング成功</string>
+    <string name="toast_pair_failed">マッチング失敗</string>
+    <string name="waiting">しばらくお待ちください……</string>
+    <string name="excavator_base_code">固定基地局とのマッチングコードを入力してください</string>
+    <string name="network_disconnect">ネットワークに接続してください</string>
+
+    <!--Ntrip-->
+    <string name="ntrip_connect">接続します</string>
+    <string name="ntrip_disconnect">接続を切ります</string>
+    <string name="ntrip_host_port_empty">アドレスまたはポートが空です！</string>
+    <string name="error_source_node_is_empty">ソースノードが空です！</string>
+    <string name="error_account_or_password_is_empty">アカウントまたはパスワードが空です！</string>
+    <string name="ntrip_get_source">ソースを取得中……</string>
+    <string name="ntrip_get_source_success">ソースの取得に成功しました！</string>
+    <string name="ntrip_get_source_failed">ソースの取得に失敗しました！</string>
+    <string name="ntrip_link_to_node">接続中……</string>
+    <string name="ntrip_link_to_node_success">接続済み！</string>
+    <string name="ntrip_link_to_node_disconnected">接続が切断されました。</string>
+    <string name="ntrip_layout_host">アドレス:</string>
+    <string name="ntrip_layout_port">ポート:</string>
+    <string name="ntrip_layout_source_node">ソースノード:</string>
+    <string name="ntrip_layout_get_source">ソースリスト</string>
+    <string name="ntrip_layout_account">アカウント:</string>
+    <string name="ntrip_layout_password">パスワード:</string>
+
+    <string name="cancel">キャンセル</string>
+    <string name="operation_success">操作成功</string>
+    <string name="operation_failed">操作失敗</string>
+
+    <string name="error_not_support_network_rtk">現在のエリアはネットワークRTKモードをサポートしていません！</string>
+    <string name="toast_pairing_success_wait_location">マッチングが完了し、ロケーションを取得中…</string>
+<!--    <string name="buy_more_time">延长有效期</string>-->
+<!--    <string name="cnn_apply">连接使用</string>-->
+<!--    <string name="text_ntrip">Ntrip 网络</string>-->
+<!--    <string name="tv_rtk">基站 RTK</string>-->
+<!--    <string name="text_change_account">切换账户</string>-->
+<!--    <string name="text_input_frequency_code">请输入对频码</string>-->
+<!--    <string name="text_ntrip_detail">Ntrip 网络账户详情</string>-->
+<!--    <string name="text_input_company_name">请输入公司名称</string>-->
+<!--    <string name="text_input_ntrip_name">请输入账户名称</string>-->
+<!--    <string name="text_input_ntrip_pwd">请输入密码</string>-->
+<!--    <string name="text_add_ntrip_account">新增账户</string>-->
+<!--    <string name="text_ntrip_save">保存</string>-->
+<!--    <string name="text_ntrip_list_choice_title">选择账户</string>-->
+<!--    <string name="text_ntrip_name_tip">账户名称</string>-->
+<!--    <string name="text_ntrip_company_name_tip">公司名称</string>-->
+<!--    <string name="text_input">请输入</string>-->
+<!--    <string name="network_exception">网络异常</string>-->
+<!--    <string name="tetx_rtk_expire_date_over">已过期，网络无法使用</string>-->
+<!--    <string name="tetx_rtk_expire_date">有限期截止：%s</string>-->
+<!--    <string name="msg_sn_not_bind_rtk">当前SN号未开通，请联系当地经销商或拨打客服热线。</string>-->
+    <string name="text_ntrip_company_name_tip">会社名</string>
+    <string name="text_input_ntrip_name">口座名を入力してください</string>
+    <string name="msg_sn_not_bind_rtk">現在SN号が開通していないので、現地のディーラーに連絡するか、カスタマーサービスホットラインに電話してください。</string>
+    <string name="tetx_rtk_expire_date_over">有効期限が切れてネットワークが使用できません</string>
+    <string name="tetx_rtk_expire_date">有効期間終了:%s</string>
+    <string name="text_input">入力してください</string>
+    <string name="text_add_ntrip_account">新規アカウント</string>
+    <string name="text_ntrip_save">保存＃ホゾン＃</string>
+    <string name="text_ntrip_list_choice_title">アカウントの選択</string>
+    <string name="buy_more_time">有効期間を延長する</string>
+    <string name="text_input_company_name">会社名を入力してください</string>
+    <string name="text_ntrip_detail">Ntripネットワークアカウントの詳細</string>
+    <string name="text_ntrip_name_tip">アカウント名</string>
+    <string name="text_change_account">アカウントの切り替え</string>
+    <string name="text_input_frequency_code">周波数ペアコードを入力してください</string>
+    <string name="text_input_ntrip_pwd">パスワードを入力してください</string>
+    <string name="cnn_apply">接続の使用</string>
+    <string name="network_exception">ネットワーク異常</string>
+</resources>

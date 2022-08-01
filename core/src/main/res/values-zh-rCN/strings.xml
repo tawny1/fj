@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="excavator_rtk_net">网络RTK</string>
+    <string name="excavator_rtk_ntrip">Ntrip网络RTK</string>
+    <string name="excavator_rtk_bs">基站RTK</string>
+
+    <string name="excavator_bs_pairing_external">外置电台对频</string>
+    <string name="excavator_bs_pairing_internal">内置电台对频</string>
+    <string name="excavator_ntrip_login">登录</string>
+    <string name="excavator_pairing_btn">对频</string>
+    <string name="toast_pair_suc">对频成功</string>
+    <string name="toast_pair_failed">对频失败</string>
+    <string name="waiting">请等待……</string>
+    <string name="excavator_base_code">请输入固定基站对频码</string>
+    <string name="network_disconnect">请连接网络</string>
+
+    <!--Ntrip-->
+    <string name="ntrip_connect">连接</string>
+    <string name="ntrip_disconnect">断开</string>
+    <string name="ntrip_host_port_empty">地址或端口为空!</string>
+    <string name="error_source_node_is_empty">源节点为空!</string>
+    <string name="error_account_or_password_is_empty">账号或密码为空!</string>
+    <string name="ntrip_get_source">正在获取源……</string>
+    <string name="ntrip_get_source_success">获取源成功!</string>
+    <string name="ntrip_get_source_failed">获取源失败!</string>
+    <string name="ntrip_link_to_node">正在连接……</string>
+    <string name="ntrip_link_to_node_success">连接成功!</string>
+    <string name="ntrip_link_to_node_disconnected">当前连接已断开!</string>
+    <string name="ntrip_layout_host">地址:</string>
+    <string name="ntrip_layout_port">端口:</string>
+    <string name="ntrip_layout_source_node">源节点:</string>
+    <string name="ntrip_layout_get_source">源列表</string>
+    <string name="ntrip_layout_account">账号:</string>
+    <string name="ntrip_layout_password">密码:</string>
+
+    <string name="cancel">取消</string>
+
+    <string name="operation_success">操作成功</string>
+    <string name="operation_failed">操作失败</string>
+
+    <string name="error_not_support_network_rtk">当前区域不支持网络RTK模式！</string>
+    <string name="toast_pairing_success_wait_location">对频完成，正在获取定位…</string>
+    <string name="buy_more_time">延长有效期</string>
+    <string name="cnn_apply">连接使用</string>
+<!--    <string name="text_ntrip">Ntrip 网络</string>-->
+<!--    <string name="tv_rtk">基站 RTK</string>-->
+    <string name="text_change_account">切换账户</string>
+    <string name="text_input_frequency_code">请输入对频码</string>
+    <string name="text_ntrip_detail">Ntrip 网络账户详情</string>
+    <string name="text_input_company_name">请输入公司名称</string>
+    <string name="text_input_ntrip_name">请输入账户名称</string>
+    <string name="text_input_ntrip_pwd">请输入密码</string>
+    <string name="text_add_ntrip_account">新增账户</string>
+    <string name="text_ntrip_save">保存</string>
+    <string name="text_ntrip_list_choice_title">选择账户</string>
+    <string name="text_ntrip_name_tip">账户名称</string>
+    <string name="text_ntrip_company_name_tip">公司名称</string>
+    <string name="text_input">请输入</string>
+    <string name="network_exception">网络异常</string>
+    <string name="tetx_rtk_expire_date_over">已过期，网络无法使用</string>
+    <string name="tetx_rtk_expire_date">有限期截止：%s</string>
+    <string name="msg_sn_not_bind_rtk">当前SN号未开通，请联系当地经销商或拨打客服热线。</string>
+</resources>

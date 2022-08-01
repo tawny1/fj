@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_6_white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_36"
+            android:text="@string/excavator_bs_pairing_internal"
+            android:textColor="#ff222222"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="47dp"
+            android:background="@drawable/bg_white_fill_stroke_r3"
+            android:hint="@string/excavator_base_code"
+            android:paddingStart="@dimen/dp_18"
+            android:textColor="#222"
+            android:textColorHint="@color/color_CCCCCC"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_code_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/text_input_frequency_code"
+            android:textColor="#ffff2121"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="@dimen/dp_36">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_stroke_r3"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="#999999"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_18"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_dark_fill_r3_2"
+                android:gravity="center"
+                android:text="@string/excavator_pairing_btn"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+
+    <!--内置网络RTK-->
+    <RelativeLayout
+        android:id="@+id/rl_rtk_net"
+        android:layout_width="220dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_6_gray">
+
+        <ImageView
+            android:id="@+id/iv_rtk_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_rtk_net_unselect" />
+
+        <TextView
+            android:id="@+id/tv_rtk_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/excavator_rtk_net"
+            android:textColor="@color/color_333333"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_rtk_net_select"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="-26dp"
+        android:layout_marginEnd="20dp"
+        android:background="@mipmap/icon_select_yellow"
+        android:visibility="invisible" />
+
+    <!--Ntrip网络RTK-->
+    <RelativeLayout
+        android:id="@+id/rl_ntrip_station"
+        android:layout_width="220dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_5_gradient_gray">
+
+        <ImageView
+            android:id="@+id/iv_ntrip_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_rtk_net_select" />
+
+        <TextView
+            android:id="@+id/tv_ntrip_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/excavator_rtk_ntrip"
+            android:textColor="@color/color_FFC500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_ntrip_rtk_login"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rtk_match_click_selector"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/excavator_ntrip_login"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_rtk_ntrip_select"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="-26dp"
+        android:layout_marginEnd="20dp"
+        android:background="@mipmap/icon_select_yellow"
+        android:visibility="visible" />
+
+    <!--基站RTK-->
+    <RelativeLayout
+        android:id="@+id/rl_base_station"
+        android:layout_width="220dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_6_gray">
+
+        <ImageView
+            android:id="@+id/iv_base_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_base_station_unselect" />
+
+        <TextView
+            android:id="@+id/tv_base_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/excavator_rtk_bs"
+            android:textColor="@color/color_333333"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_base_station_match"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rtk_match_click_selector"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/excavator_pairing_btn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_base_station_select"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="-26dp"
+        android:background="@mipmap/icon_select_yellow"
+        android:visibility="invisible" />
+
+</LinearLayout>
+

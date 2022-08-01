@@ -1,0 +1,6 @@
+Guss 1.0版本
+
+封装Ntrip、千寻、内置电台、外置电台等基本功能，具体的通讯还是需要客户端去实行。
+里面RTKSettingLinearLayout可以直接集成到自己的设置界面，也可以集成
+RTKSettingLinearLayout，自定义界面内容。RTKSettingLinearLayout中的netChangeDoJob
+方法就是调用Ntrip、千寻、内置电台、外置电台等基本功能的方法。

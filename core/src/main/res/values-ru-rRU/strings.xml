@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="excavator_rtk_net">Сеть RTK</string>
+    <string name="excavator_rtk_ntrip">Сеть Ntrip RTK</string>
+    <string name="excavator_rtk_bs">Базовая станция RTK</string>
+
+    <string name="excavator_bs_pairing_external">Сопряжение с внешним радио</string>
+    <string name="excavator_bs_pairing_internal">Сопряжение с внутренним радио</string>
+    <string name="excavator_ntrip_login">Логин</string>
+    <string name="excavator_pairing_btn">Сопряжение</string>
+    <string name="toast_pair_suc">Сопряжение успешно!</string>
+    <string name="toast_pair_failed">Сопряжение не удалось!</string>
+    <string name="waiting">Ждите…</string>
+    <string name="excavator_base_code">Введите код сопряжения базовой станции</string>
+    <string name="network_disconnect">Подключитесь к сети!</string>
+
+    <!--Ntrip-->
+    <string name="ntrip_connect">Подключен</string>
+    <string name="ntrip_disconnect">Отключен</string>
+    <string name="ntrip_host_port_empty">Адресс или порт не введены!</string>
+    <string name="error_source_node_is_empty">Исходный узел пуст!</string>
+    <string name="error_account_or_password_is_empty">Учетная запись или пароль пусты!</string>
+    <string name="ntrip_get_source">Получение источника…</string>
+    <string name="ntrip_get_source_success">Получение источника успешно!</string>
+    <string name="ntrip_get_source_failed">Получение источника не удалось!</string>
+    <string name="ntrip_link_to_node">Подключение…</string>
+    <string name="ntrip_link_to_node_success">Подключен успешно!</string>
+    <string name="ntrip_link_to_node_disconnected">В настоящее время отключен!</string>
+    <string name="ntrip_layout_host">Адрес:</string>
+    <string name="ntrip_layout_port">Порт:</string>
+    <string name="ntrip_layout_source_node">Исходный узел:</string>
+    <string name="ntrip_layout_get_source">Список источников</string>
+    <string name="ntrip_layout_account">Учетная запись:</string>
+    <string name="ntrip_layout_password">Пароль:</string>
+
+    <string name="cancel">Отмена</string>
+
+    <string name="operation_success">Операция успешна!</string>
+    <string name="operation_failed">Операция не удалась!</string>
+
+    <string name="error_not_support_network_rtk">Сетевой режим RTK не поддерживается в данном регионе!</string>
+    <string name="toast_pairing_success_wait_location">Сопряжение завершено, определение местоположения…</string>
+<!--    <string name="buy_more_time">延长有效期</string>-->
+<!--    <string name="cnn_apply">连接使用</string>-->
+<!--    <string name="text_ntrip">Ntrip 网络</string>-->
+<!--    <string name="tv_rtk">基站 RTK</string>-->
+<!--    <string name="text_change_account">切换账户</string>-->
+<!--    <string name="text_input_frequency_code">请输入对频码</string>-->
+<!--    <string name="text_ntrip_detail">Ntrip 网络账户详情</string>-->
+<!--    <string name="text_input_company_name">请输入公司名称</string>-->
+<!--    <string name="text_input_ntrip_name">请输入账户名称</string>-->
+<!--    <string name="text_input_ntrip_pwd">请输入密码</string>-->
+<!--    <string name="text_add_ntrip_account">新增账户</string>-->
+<!--    <string name="text_ntrip_save">保存</string>-->
+<!--    <string name="text_ntrip_list_choice_title">选择账户</string>-->
+<!--    <string name="text_ntrip_name_tip">账户名称</string>-->
+<!--    <string name="text_ntrip_company_name_tip">公司名称</string>-->
+<!--    <string name="text_input">请输入</string>-->
+<!--    <string name="network_exception">网络异常</string>-->
+<!--    <string name="tetx_rtk_expire_date_over">已过期，网络无法使用</string>-->
+<!--    <string name="tetx_rtk_expire_date">有限期截止：%s</string>-->
+<!--    <string name="msg_sn_not_bind_rtk">当前SN号未开通，请联系当地经销商或拨打客服热线。</string>-->
+    <string name="text_ntrip_company_name_tip">название компании</string>
+    <string name="text_input_ntrip_name">Введите имя счёта</string>
+    <string name="msg_sn_not_bind_rtk">В настоящее время система СН не функционирует.</string>
+    <string name="tetx_rtk_expire_date_over">устаревшая сеть не может быть использована</string>
+    <string name="tetx_rtk_expire_date">конечный период:%</string>
+    <string name="text_input">Введите пожалуйста</string>
+    <string name="text_add_ntrip_account">Дополнительные счета</string>
+    <string name="text_ntrip_save">Сохранить</string>
+    <string name="text_ntrip_list_choice_title">выбор счета</string>
+    <string name="buy_more_time">продлевать срок действия</string>
+    <string name="text_input_company_name">Введите название компании</string>
+    <string name="text_ntrip_detail">Подробная информация о сетевом счете Ntrip</string>
+    <string name="text_ntrip_name_tip">название счета</string>
+    <string name="text_change_account">Переключить счёт</string>
+    <string name="text_input_frequency_code">Введите код на частоту</string>
+    <string name="text_input_ntrip_pwd">Введите пароль</string>
+    <string name="cnn_apply">подключение</string>
+    <string name="network_exception">сетевые аномалии</string>
+
+</resources>

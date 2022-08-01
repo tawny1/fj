@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/bg_machine1"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <com.example.myapplication.widget.HRecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_check_list"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="92dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/layout_check_item" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_machine"
+            android:layout_width="360dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_device_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="智能车载SN号:CS1931XDS"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_check"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_checking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="平地机正在自检"
+                android:textColor="#222222"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_waiting"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@id/tv_checking"
+                android:text="..."
+                android:textColor="#222222"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/iv_result"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_check_ok"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

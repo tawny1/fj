@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".activity.MainActivity">
+
+    <SeekBar
+        android:visibility="gone"
+        android:theme="@style/TestTheme"
+        android:id="@+id/sb_system_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:max="100"
+        android:maxHeight="15dp"
+        android:progress="10"
+        android:progressDrawable="@drawable/bg_seekbar"
+        android:thumb="@drawable/seekbar_thumb"
+        android:thumbOffset="0dp" />
+
+
+    <com.example.myapplication.widget.CustomSeekbarView
+        android:visibility="gone"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@id/sb_system_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:max="100"
+        android:maxHeight="15dp"
+        android:progress="10"
+        android:progressDrawable="@drawable/bg_seekbar"
+        android:thumb="@drawable/seekbar_thumb"
+        android:thumbOffset="0dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_below="@+id/btn"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_below="@+id/btn2"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn4"
+        android:layout_centerInParent="true" />
+
+<!--    <com.example.myapplication.widget.TextShaderView-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_below="@+id/btn3"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"/>-->
+
+<!--    <com.example.myapplication.widget.ShaderView-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <TableLayout
+        android:id="@+id/tab"
+        android:layout_below="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText
+                android:text="400"
+                android:inputType="number"
+                android:id="@+id/editTextN1"
+                android:layout_width="100dp"
+                />
+
+            <EditText
+                android:text="800"
+                android:inputType="number"
+                android:id="@+id/editTextN2"
+                android:layout_width="100dp"
+                />
+            <EditText
+                android:text="200"
+                android:inputType="number"
+                android:id="@+id/editTextN3"
+                android:layout_width="100dp"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:text="300"
+                android:inputType="number"
+                android:id="@+id/editTextE1"
+                android:layout_width="100dp"
+                />
+
+            <EditText
+                android:text="600"
+                android:inputType="number"
+                android:id="@+id/editTextE2"
+                android:layout_width="100dp"
+                />
+            <EditText
+                android:text="900"
+                android:inputType="number"
+                android:id="@+id/editTextE3"
+                android:layout_width="100dp"
+                />
+            <Button
+                android:id="@+id/bt"
+                android:text="确定"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <com.example.myapplication.widget.TriangleView
+        android:id="@+id/triangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab" />
+
+</RelativeLayout>

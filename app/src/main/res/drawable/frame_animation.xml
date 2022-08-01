@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@mipmap/pdj_0"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_1"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_2"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_3"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_4"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_5"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_6"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_7"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_8"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_9"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_10"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_11"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_12"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_13"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_14"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_15"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_16"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_17"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_18"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_19"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_20"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_21"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_22"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_23"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_24"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_25"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_26"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_27"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_28"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_29"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_30"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_31"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_32"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_33"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_34"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_35"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_36"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_37"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_38"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_39"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_40"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_41"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_42"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_43"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_44"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_45"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_46"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_47"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_48"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_49"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_50"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_51"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_52"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_53"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_54"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_55"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_56"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_57"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_58"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_59"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_60"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_61"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_62"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_63"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_64"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_65"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_66"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_67"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_68"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_69"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_70"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_71"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_72"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_73"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_74"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_75"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_76"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_77"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_78"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_79"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_80"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_81"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_82"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_83"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_84"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_85"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_86"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_87"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_80"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_89"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_90"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_91"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_92"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_93"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_94"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_95"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_96"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_97"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_98"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_99"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_100"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_101"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_102"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_103"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_104"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_105"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_106"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_107"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_108"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_109"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_110"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_111"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_112"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_113"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_114"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_115"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_116"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_117"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_118"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_119"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_120"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_121"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_122"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/pdj_123"
+        android:duration="80" />
+
+</animation-list>
