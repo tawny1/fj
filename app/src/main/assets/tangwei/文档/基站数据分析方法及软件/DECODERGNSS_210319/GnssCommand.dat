@@ -1,0 +1,41 @@
+[二进制命令]
+Trimble_GETSERIAL            020006000603    
+Trimble_temp                 020041004103
+读取UBOX_EPH                 B56202310000339B
+读取UBOX_EPH                 B562060103000231013EA8
+读取UBOX_ECFF                B562060103000101010D45
+停止UBOX_ECFF                B562060103000101000C44
+读取UBOX_RAW                 B562060103000210011D66
+停止UBOX_RAW                 B562060103000210001C65
+NAV:BINR_差分设置            100B0200C20100031003
+[文本命令]
+JAVA原始数据流               dm@em,,/msg/jps/RT:1@em,,/msg/jps/RD:1@em,,/msg/jps/{GE,NE}:{0,0,0,0x2}@em,,/msg/jps/{SI,NN,rc,cp,DC,EC,2r,2p,D2,E2}:1@em,,/msg/jps/ET:1
+JAVA-gpS-EPH                 dm,,/msg/jps/GE@em,,/msg/jps/GE:{0,0,0,0x2}
+JAVA-glonass-eph             dm,,/msg/jps/NE@em,,/msg/jps/NE:{0,0,0,0x2}
+JAVA-EPH                     dm,,/msg/jps/{GE,NE}@em,,/msg/jps/{GE,NE}:{0,0,0,0x2}
+Novatel:获取版本             log,com1,version
+Novatel:SET_0183_GN          nmeatalker,auto
+Novatel:取消命令             unlogall
+Novatel:申请rangeb           log,rangeb,ontime,1
+Novatel:申请rawephemb        log,rawephemb,ontime,5
+Novatel:申请GLORAWEPHEMb     log,GLORAWEPHEMb
+Novatel:申请GLOEPHEMERISb    log,GLOEPHEMERISb
+Novatel:申请psrxyz           log,psrxyz,ontime,5
+Novatel:FRESET               FRESET,clkcalibration
+Novatel:设置novatel          interfacemode,com2,novatel,novatel
+Novatel:设置RTCM             interfacemode,com2,RTCM,novatel
+Novatel:设置CMR              interfacemode,com2,CMR,novatel
+Novatel:COM配置              log,comconfig
+Novatel:保存配置             saveconfig
+和芯通:申请BD2ephemb         log,BD2ephemb,onchanged
+和芯通:申请GPSephemb         log,GPSephemb,onchanged
+南方:申请rangecmpb           logSPACErangecmpbSPACEontimeSPACE1
+南方:申请BD2rawephemb        logSPACEbd2rawephembSPACEonchanged
+南方:申请GPSrawephemb        logSPACErawephembSPACEonchanged
+南方:申请BD2ephemb           logSPACEbd2ephembSPACEonchanged
+南方:申请GPSephemb           logSPACEgpsephembSPACEonchanged
+南方:申请GALephemerisb       logSPACEGALephemerisbSPACEontimeSPACE30
+[SICCOMMAND]
+ONLINE.REGI
+ONLINE.CMCC
+ONLINE.SDK

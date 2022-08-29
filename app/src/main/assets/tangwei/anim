@@ -1,0 +1,57 @@
+
+
+--补间动画：
+
+scale	ScaleAnimation	渐变尺寸伸缩动画效果
+alpha	AlphaAnimation	渐变透明动画效果
+rotate	RotateAnimation	画面转移旋转动画效果
+translate	TranslateAnimation	画面转移位置移动动画效果
+set		AnimationSet	动画集合
+
+
+
+--属性动画：
+
+ValueAnimator		
+ObjectAnnimator		
+AnimatorSet
+
+
+
+
+--动画估值器
+
+IntEvaluator：		计算 int 值
+FloatEvaluator：		计算 float 值
+ArgbEvaluator：		计算 color（十六进制）属性值
+PointFEvaluator：	计算 Point
+TypeEvaluator： 		自定义计算属性值
+
+
+
+
+--动画插值器
+
+AccelerateDecelerateInterpolator    @android:anim/accelerate_decelerate_interpolator    其变化开始和结束速率较慢，中间加速
+AccelerateInterpolator  @android:anim/accelerate_interpolator   其变化开始速率较慢，后面加速
+DecelerateInterpolator  @android:anim/decelerate_interpolator   其变化开始速率较快，后面减速
+LinearInterpolator  @android:anim/linear_interpolator   其变化速率恒定
+AnticipateInterpolator  @android:anim/anticipate_interpolator   其变化开始向后甩，然后向前
+AnticipateOvershootInterpolator @android:anim/anticipate_overshoot_interpolator 其变化开始向后甩，然后向前甩，过冲到目标值，最后又回到了终值
+OvershootInterpolator   @android:anim/overshoot_interpolator    其变化开始向前甩，过冲到目标值，最后又回到了终值
+BounceInterpolator  @android:anim/bounce_interpolator   其变化在结束时反弹
+CycleInterpolator   @android:anim/cycle_interpolator    循环播放，其速率为正弦曲线
+TimeInterpolator        一个接口，可以自定义插值器
+
+
+
+
+
+
+
+
+
+
+
+
+

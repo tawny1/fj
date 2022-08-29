@@ -1,0 +1,143 @@
+
+
+--自定义View
+
+
+1、view的绘制流程：
+
+onMeasure() -> onLayout() -> onDraw()
+
+
+MeasureSpec
+
+MeasureSpec是View的内部类，它封装了一个View的尺寸，在onMeasure()当中会根据这个MeasureSpec的值来确定View的宽高
+
+MeasureSpec的值保存在一个int值当中。一个int值有32位，前两位表示 模式mode 后30位表示 大小size 。即 MeasureSpec = mode + size。
+
+在MeasureSpec中，共有三种mode： UNSPECIFIED、 EXACTLY、 AT_MOST。
+
+EXACTLY： 精准模式，View需要一个精确值，这个值即为MeasureSpec中的size，对应 match_parent
+
+AT_MOST： 最大模式，View的尺寸有一个最大值，View不可以超过MeasureSpec当中的size值，对应 wrap_content
+
+UNSPECIFIED: 无限制，View对尺寸没有任何限制，View设置为多大就应当为多大，一般系统内部使用
+
+
+{
+	实际测试中，int mode = MeasureSpec.getMode(spec)
+	当view设置wrap_content时，mode = AT_MOST
+	当view设置match_parent时，mode = EXACTLY
+	当view设置精确大小dp时，   mode = EXACTLY
+}
+
+
+
+
+
+
+2、坐标系
+
+Android坐标系，屏幕左上角为原点 (0, 0)，X轴向右是正轴，Y轴向下是正轴。
+
+view坐标系：
+getWidth()、getHeight() 获取view的高宽。
+getTop()、getLeft()、getBottom()、getRight() 获取view到父布局的距离
+
+
+
+3、view的自定义属性
+
+
+属性值format：
+
+reference -> 资源id
+color -> 颜色值
+boolean -> boolean值
+dimension -> 尺寸值
+float -> 浮点值
+integer -> 整型值
+string -> 字符串
+fraction -> 百分数
+	使用：
+	<attr name = "pivotX" format = "fraction" />
+
+	<rotate android:pivotX = "200%"/>
+
+enum -> 枚举值			
+	使用：
+	<declare-styleable name="名称">
+    	<attr name="orientation">
+        	<enum name="horizontal" value="0" />
+        	<enum name="vertical" value="1" />
+    	</attr>
+	</declare-styleable>
+
+	<LinearLayout  
+    	android:orientation = "vertical">
+	</LinearLayout>
+
+flag -> 位或运算
+	使用：
+	<declare-styleable name="名称">
+	    <attr name="gravity">
+	            <flag name="top" value="0x01" />
+	            <flag name="bottom" value="0x02" />
+	            <flag name="left" value="0x04" />
+	            <flag name="right" value="0x08" />
+	            <flag name="center_vertical" value="0x16" />
+	    </attr>
+	</declare-styleable>
+
+	<TextView android:gravity="bottom|left"/>
+
+
+
+
+--invalidate 和 requestLayout
+
+invalidate 需要刷新的时候调用，如果是个view，只有本身会draw，如果是viewGroup就是对子view进行重绘。（类似于adapter的notify）
+
+requestLayout 需要重新measure时调用，后面再跟invalidate，保证重绘。 
+
+
+
+--ViewRootImpl.java  -> checkThread()
+
+Only the original thread that created a view hierarchy can touch its views.
+只有创建了view树的线程，才能访问它的子view
+
+
+
+
+
+
+
+
+fragment生命周期切换时，getSupportFragmentManager().beginTransaction().commit()会报错，错误日志位置：FragmentManager -> checkStateLoss()
+1、可改用 commitAllowingStateLoss()，不检测状态
+2、remove(BUNDLE_FRAGMENTS_KEY)，清除fragment状态，AndroidX中需要getBundle("androidx.lifecycle.BundlableSavedStateRegistry.key")
+
+
+
+
+
+--AtomicInteger 原子计数器
+
+AtomicInteger类是系统底层保护的int类型，通过提供执行方法的控制进行值的原子操作。
+
+
+	什么情况下使用AtomicInteger?
+
+		1、作为多个线程同时使用的原子计数器。
+		2、在比较和交换操作中实现非阻塞算法。
+
+
+		AtomicIntegerclass提供了一些以原子方式执行加法和减法操作的方法:
+
+		addAndGet()- 以原子方式将给定值添加到当前值，并在添加后返回新值。
+		getAndAdd() - 以原子方式将给定值添加到当前值并返回旧值。
+		incrementAndGet()- 以原子方式将当前值递增1并在递增后返回新值。它相当于i ++操作。
+		getAndIncrement() - 以原子方式递增当前值并返回旧值。它相当于++ i操作。
+		decrementAndGet()- 原子地将当前值减1并在减量后返回新值。它等同于i-操作。
+		getAndDecrement() - 以原子方式递减当前值并返回旧值。它相当于-i操作。
+

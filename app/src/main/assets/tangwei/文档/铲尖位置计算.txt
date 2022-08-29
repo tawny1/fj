@@ -1,0 +1,56 @@
+double gpspos1[3];
+gpspos1[0] = vehicle_gps_position_pub.pos_n_m;
+gpspos1[1] = vehicle_gps_position_pub.pos_e_m;
+gpspos1[2] = -vehicle_gps_position_pub.alt * 0.001;
+PosTransfrom(gpspos1, atti,  gps1_offset, newpos1);
+	
+double gpspos2[3];
+gpspos2[0] = vehicle_gps_position_pub.pos_n_m2;
+gpspos2[1] = vehicle_gps_position_pub.pos_e_m2;
+gpspos1[2] = -vehicle_gps_position_pub.alt * 0.001;
+PosTransfrom(gpspos2, atti,  gps2_offset, newpos2);
+
+void CVehicleState::PosTransfrom(double gpspos[3], double attitude[3], double gps_offset[3], double newpos[3])
+{
+	//gps_offset[3] 以新位置为原点,坐标轴同imu，建立body坐标系，确定定位天线的坐标gps_offset[3]
+	//body坐标系,0度时与NED系一致,下为z轴，车轴前向为x轴，右手系
+	double R[3][3] = {0};
+	CalcEuler2RotationMatrix(attitude, R);
+	
+	newpos[0] = gpspos[0] - (R[0][0]*gps_offset[0] + R[0][1]*gps_offset[1] + R[0][2]*gps_offset[2]);
+	newpos[1] = gpspos[1] - (R[1][0]*gps_offset[0] + R[1][1]*gps_offset[1] + R[1][2]*gps_offset[2]);
+	newpos[2] = gpspos[2] - (R[2][0]*gps_offset[0] + R[2][1]*gps_offset[1] + R[2][2]*gps_offset[2]);
+}
+
+void CVehicleState::CalcEuler2RotationMatrix(double attitude[3], double Cnb[3][3])
+{
+	//euler angle 旋转顺序 z-y-x 
+	//NED 坐标系
+	float ax,ay,az;
+	float fSinRoll,fSinPitch,fSinYaw;
+	float fCosRoll,fCosPitch,fCosYaw;
+
+	ax	= attitude[0] * DEG2RAD;
+	ay	= attitude[1] * DEG2RAD;
+	az	= attitude[2] * DEG2RAD;
+	
+	fSinRoll	= sin(ax);
+	fSinPitch	= sin(ay);
+	fSinYaw	 	= sin(az);
+	
+	fCosRoll	= cos(ax);
+	fCosPitch	= cos(ay);
+	fCosYaw		= cos(az);
+	
+	Cnb[0][0] = fCosPitch * fCosYaw;
+	Cnb[0][1] = -fCosRoll * fSinYaw + fSinRoll * fSinPitch * fCosYaw;
+	Cnb[0][2] = fSinRoll  * fSinYaw + fCosRoll * fSinPitch * fCosYaw;
+	
+	Cnb[1][0] = fCosPitch * fSinYaw;
+	Cnb[1][1] = fCosRoll  * fCosYaw + fSinRoll * fSinPitch * fSinYaw;
+	Cnb[1][2] = -fSinRoll * fCosYaw + fCosRoll * fSinPitch * fSinYaw;
+	
+	Cnb[2][0] =  -fSinPitch;
+	Cnb[2][1] = fSinRoll * fCosPitch;
+	Cnb[2][2] = fCosRoll * fCosPitch; 
+}

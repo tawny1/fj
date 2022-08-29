@@ -31,10 +31,6 @@ import com.example.myapplication.widget.HRecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Wentao.Hu
- * @description 启动自检
- */
 public class CheckActivity extends Activity {
 
     private static final String TAG = "CheckFragment";

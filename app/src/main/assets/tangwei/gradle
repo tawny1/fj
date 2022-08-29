@@ -1,0 +1,65 @@
+
+
+--Gralde
+
+Gradle是一个基于Apache Ant和Apache Maven概念的项目自动化构建开源工具。
+
+
+
+
+
+
+
+
+
+
+
+--发布maven
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //发布版本
+            repository(url: "http://172.17.7.35/repository/maven-snapshots/") {
+                authentication(userName: 'admin', password: 'Fj12345')
+            }
+            pom.project {
+                name 'FJConstructionUpgrade'//项目名
+                groupId 'com.fj.construction.upgrade'//包名
+                artifactId 'FJConstructionUpgrade'//项目id
+                version "1.0.0-SNAPSHOT" //发布版本
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+--AndroidStudio Gradle.properties 配置项
+
+org.gradle.daemon=true		开启Gradle的守护进程来构建项目
+
+org.gradle.parallel=true	并行项目执行
+
+org.gradle.configureondemand=true
+
+
+# Try and findout the best heap size for your project build.
+org.gradle.jvmargs=-Xmx5120m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+
+
+aaptOptions.cruncherEnabled=false
+
+aaptOptions.useNewCruncher=false
+
+

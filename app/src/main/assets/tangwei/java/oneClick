@@ -1,0 +1,140 @@
+/**
+ * The type Anti shake.
+ */
+public class AntiShake {
+    private  static LimitQueue<OneClick> queue = new LimitQueue<>(20);
+
+    /**
+     * Check boolean.
+     *
+     * @param o the o
+     * @return the boolean
+     */
+    public static boolean check(Object o) {
+        String flag;
+        if(o == null) {
+            flag = Thread.currentThread().getStackTrace()[2].getMethodName();
+        } else {
+            flag = o.toString();
+        }
+        for (OneClick util : queue.getArrayList()) {
+            if (util.getMethodName().equals(flag)) {
+                return util.check();
+            }
+        }
+        OneClick clickUtil = new OneClick(flag);
+        queue.offer(clickUtil);
+        return clickUtil.check();
+    }
+
+}
+
+
+/**
+ * The type One click.
+ */
+public class OneClick {
+    private String methodName;
+    private static final int CLICK_DELAY_TIME = 1000;
+    private long lastClickTime = 0;
+
+    /**
+     * Instantiates a new One click.
+     *
+     * @param methodName the method name
+     */
+    public OneClick(String methodName) {
+        this.methodName = methodName;
+    }
+
+    /**
+     * Gets method name.
+     *
+     * @return the method name
+     */
+    public String getMethodName() {
+        return methodName;
+    }
+
+    /**
+     * Check boolean.
+     *
+     * @return the boolean
+     */
+    public boolean check() {
+        long currentTime = Calendar.getInstance().getTimeInMillis();
+        if (currentTime - lastClickTime > CLICK_DELAY_TIME) {
+            lastClickTime = currentTime;
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+}
+
+
+
+public class StrokeTextView extends TextView {
+
+    private TextView backGroundText = null;//用于描边的TextView
+
+    public StrokeTextView(Context context) {
+        this(context, null);
+    }
+
+    public StrokeTextView(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public StrokeTextView(Context context, AttributeSet attrs,
+                          int defStyle) {
+        super(context, attrs, defStyle);
+        backGroundText = new TextView(context, attrs, defStyle);
+    }
+
+    @Override
+    public void setLayoutParams(ViewGroup.LayoutParams params) {
+        //同步布局参数
+        backGroundText.setLayoutParams(params);
+        super.setLayoutParams(params);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        CharSequence tt = backGroundText.getText();
+        //两个TextView上的文字必须一致
+        if (tt == null || !tt.equals(this.getText())) {
+            backGroundText.setText(getText());
+            this.postInvalidate();
+        }
+        backGroundText.measure(widthMeasureSpec, heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        backGroundText.layout(left, top, right, bottom);
+        super.onLayout(changed, left, top, right, bottom);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        //其他地方，backGroundText和super的先后顺序影响不会很大，但是此处必须要先绘制backGroundText，
+        init();
+        backGroundText.draw(canvas);
+        super.onDraw(canvas);
+    }
+
+    public void init() {
+        TextPaint tp1 = backGroundText.getPaint();
+        //设置描边宽度
+        tp1.setStrokeWidth(2);
+        //背景描边并填充全部
+        tp1.setStyle(Paint.Style.FILL_AND_STROKE);
+        //设置描边颜色
+        backGroundText.setTextColor(Color.parseColor("#1E90FF"));
+        //将背景的文字对齐方式做同步
+        backGroundText.setGravity(getGravity());
+    }
+
+}

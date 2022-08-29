@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" date="2022-06-27" time="17:23:14" version="1.2" language="English" readOnly="false">
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="milliBars" diameterUnit="millimeter" angularUnit="decimal degrees" directionUnit="decimal degrees"></Metric>
+	</Units>
+	<Project name="Drawing1.dwg"></Project>
+	<Application name="AutoCAD Civil 3D" desc="Civil 3D" manufacturer="Autodesk, Inc." version="2018" manufacturerURL="www.autodesk.com/civil" timeStamp="2022-06-27T17:23:14"></Application>
+	<CgPoints>
+		<CgPoint name="1">3349709.715199999977 504517.893400000001 8.6</CgPoint>
+		<CgPoint name="2">3349701.780999999959 504509.705699999991 8.6</CgPoint>
+		<CgPoint name="3">3349691.698100000154 504499.783400000015 8.6</CgPoint>
+		<CgPoint name="4">3349683.044100000057 504490.874300000025 8.6</CgPoint>
+		<CgPoint name="5">3349707.560790429357 504519.981106732681 8.6</CgPoint>
+		<CgPoint name="6">3349711.869609570596 504515.805693267321 8.6</CgPoint>
+		<CgPoint name="8">3349699.626590443309 504511.793406747107 8.6</CgPoint>
+		<CgPoint name="9">3349693.802322764415 504497.645118784043 8.6</CgPoint>
+		<CgPoint name="10">3349689.593877235893 504501.921681215987 8.6</CgPoint>
+		<CgPoint name="11">3349685.196005053818 504488.784011829528 8.6</CgPoint>
+		<CgPoint name="12">3349680.8921949449 504492.964588170755 8.6</CgPoint>
+		<CgPoint name="13">3349703.935409613885 504507.61799331056 8.6</CgPoint>
+	</CgPoints>
+	<Surfaces>
+		<Surface name="Surface1" desc="描述">
+			<SourceData>
+				<Breaklines>
+					<Breakline brkType="standard" desc="11">
+						<PntList3D>3349709.715199999511 504517.893399999943 8.6 3349701.780999999493 504509.705699999817 8.6 3349691.69810000062 504499.783400000073 8.6 3349683.044099999592 504490.874300000258 8.6</PntList3D>
+					</Breakline>
+				</Breaklines>
+			</SourceData>
+			<Definition surfType="TIN" area2DSurf="227.785833331588" area3DSurf="227.785833331588" elevMax="8.6" elevMin="8.6">
+				<Pnts>
+					<P id="5">3349693.802322764415 504497.645118784043 8.6</P>
+					<P id="6">3349709.715199999977 504517.893400000001 8.6</P>
+					<P id="7">3349701.780999999959 504509.705699999991 8.6</P>
+					<P id="8">3349691.698100000154 504499.783400000015 8.6</P>
+					<P id="9">3349683.044100000057 504490.874300000025 8.6</P>
+					<P id="10">3349707.560790429357 504519.981106732681 8.6</P>
+					<P id="11">3349711.869609570596 504515.805693267321 8.6</P>
+					<P id="12">3349699.626590443309 504511.793406747107 8.6</P>
+					<P id="13">3349689.593877235893 504501.921681215987 8.6</P>
+					<P id="14">3349685.196005053818 504488.784011829528 8.6</P>
+					<P id="15">3349680.8921949449 504492.964588170755 8.6</P>
+					<P id="16">3349703.935409613885 504507.61799331056 8.6</P>
+				</Pnts>
+				<Faces>
+					<F n="0 2 8">16 5 7</F>
+					<F n="9 1 3">8 7 5</F>
+					<F n="10 2 4">9 8 5</F>
+					<F n="0 3 0">14 9 5</F>
+					<F n="8 0 0">16 6 11</F>
+					<F n="0 0 7">12 10 6</F>
+					<F n="6 8 9">12 6 7</F>
+					<F n="1 7 5">16 7 6</F>
+					<F n="7 2 11">12 7 8</F>
+					<F n="12 3 0">15 8 9</F>
+					<F n="0 9 12">13 12 8</F>
+					<F n="0 11 10">15 13 8</F>
+				</Faces>
+			</Definition>
+		</Surface>
+	</Surfaces>
+</LandXML>
